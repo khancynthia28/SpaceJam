@@ -22,6 +22,7 @@ Project: Space Jam
 ## Modules:
 Classification modules:
 	1. cv.py - for classification of room based on objects in it, used aws rekognition api
+	
 Dimensionality core modules:
 	2. switch_template.py - for template matching and to get outlet label or switch board height and width in pixels
 	3. edge_detection.py - for edge detection of the image
@@ -39,12 +40,16 @@ and in command-prompt, run python cv.py imagePath
 
 - To run switch_template.py
 use the following command-prompt after going to files folder
+
 python .\switch_template.py --template '.\CV project\switch_1.jpg' --image '.\CV project\switch.jpg'
+
 output will be as in fig 2 in report and text as follows
+
 switch height and switch width are  59.0 40.0
 
 - To run edge_detection.py
 python edge_detection.py
+
 output will save an image with edges detected and saved as "houghlines3.jpg" and shown 
 
 - To run edgedetection.m
@@ -52,10 +57,17 @@ just run edgedetection.m in MATLAB2018, this will save an image in the name edge
 
 - To line_detection.m
 just run line_detection.m in MATLAB2018, code has inputs from edgedetection.m, edge_detection.py and switch_template.py and also real measurements
+
 The output will be as follows
+
 in pixels room height: 943.1357 and width: 1371.2607
+
 in inches height: 5.4331 and width: 3.5827
+
 in pixels height: 59 and width: 40
+
 in inches observed room height: 86.8495 and width: 126.2738
+
 in inches real room height: 98.8976 and width: 157.2441
+
 error in % for room height: 12.1824 and width: 19.6956
