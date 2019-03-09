@@ -20,14 +20,15 @@ Project: Space Jam
 - opencv-python
 
 ## Modules:
-Classification modules:
+### Classification modules:
 	1. cv.py - for classification of room based on objects in it, used aws rekognition api
 	
-Dimensionality core modules:
-	2. switch_template.py - for template matching and to get outlet label or switch board height and width in pixels
-	3. edge_detection.py - for edge detection of the image
-	4. edgedetection.m - matlab file used for joining small edges with gaps to form one straight edge
-	5. line_detection.m - to detect lines from the outputs of edge_detection.py,edgedetection.m and switch_template.py and measure actual dimensions using proportionality
+### Dimensionality core modules:
+
+	1. switch_template.py - for template matching and to get outlet label or switch board height and width in pixels
+	2. edge_detection.py - for edge detection of the image
+	3. edgedetection.m - matlab file used for joining small edges with gaps to form one straight edge
+	4. line_detection.m - to detect lines from the outputs of edge_detection.py,edgedetection.m and switch_template.py and measure actual dimensions using proportionality
 	
 ## Dimensionality Supporting modules:
 	lineseg.m, maxlinedev.m, edgelink.m, findendsjunctions.m, drawedgelist.m are submodules used by edgedetection.m to join small edges to large edges
@@ -53,12 +54,14 @@ python edge_detection.py
 output will save an image with edges detected and saved as "houghlines3.jpg" and shown 
 
 - To run edgedetection.m
+
 just run edgedetection.m in MATLAB2018, this will save an image in the name edgedetected.jpg
 
 - To line_detection.m
+
 just run line_detection.m in MATLAB2018, code has inputs from edgedetection.m, edge_detection.py and switch_template.py and also real measurements
 
-The output will be as follows
+### The output will be as follows
 
 in pixels room height: 943.1357 and width: 1371.2607
 
